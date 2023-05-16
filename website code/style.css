@@ -1,0 +1,67 @@
+body{
+    margin-left: 20%;
+    magin-right: auto;}
+
+
+
+#stop-gr-enabled:checked + #stop-gr-label {
+    font-weight: bold;
+    color:lightgreen;
+    border: lime 1px solid;
+    padding: 5px;
+}
+#stop-gr-enabled + #stop-gr-label {
+    font-weight: normal;
+    color: darkred;
+    border: lightcoral 1px solid;
+    padding: 5px;
+}
+#stop-bl-enabled:checked + #stop-bl-label {
+    font-weight: bold;
+    color:lightgreen;
+    border: lime 1px solid;
+    padding: 5px;
+}
+#stop-bl-enabled + #stop-bl-label {
+    font-weight: normal;
+    color: darkred;
+    border: lightcoral 1px solid;
+    padding: 5px;
+}
+#stop-rd-enabled:checked + #stop-rd-label {
+    font-weight: bold;
+    color:lightgreen;
+    border: lime 1px solid;
+    padding: 5px;
+}
+#stop-rd-enabled + #stop-rd-label {
+    font-weight: normal;
+    color: darkred;
+    border: lightcoral 1px solid;
+    padding: 5px;
+}
+
+#stopgroen {
+    padding-bottom: 25px;
+}
+#stopblauw {
+    padding-top:10px;
+    padding-bottom: 20px;
+}
+#blauweknop{
+    background-color: aqua;
+    color: black;
+}
+button{
+    background-color: aqua;
+    color: black;
+}
+#blauw{
+    background-color: aqua;
+    color: black;
+
+}
+body {
+    color: #eee;
+    background: #121212;
+}
