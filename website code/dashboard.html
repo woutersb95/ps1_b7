@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        //Deze functie krijgt een waarde van de drukknop hierboven en geeft deze waarde door aan de route led in onze python server
+        //inhoud wordt geplaatst in div tag led 
+        function buttonvaluerood(nummer)
+{
+  $( "#rood" ).load("/rood", { "getal": nummer });
+}
+        </script>
+        <script>
+            //Deze functie krijgt een waarde van de drukknop hierboven en geeft deze waarde door aan de route led in onze python server
+            //inhoud wordt geplaatst in div tag led 
+            function buttonvaluegroen(nummer)
+    {
+      $( "#groen" ).load("/groen", { "getal": nummer });
+    }
+            </script>
+
+<script>
+    //Deze functie krijgt een waarde van de drukknop hierboven en geeft deze waarde door aan de route led in onze python server
+    //inhoud wordt geplaatst in div tag led 
+    function buttonvalueblauw(nummer)
+{
+$( "#blauw" ).load("/blauw", { "getal": nummer });
+}
+    </script>
+</head>
+<body>
+<box class="box">
+<h1>Stopdesigner</h1>
+    <div id="rood"></div>
+ <!-- bij het drukken op de button wordt de value "1" meegegeven naar de javascript code -->
+	<button onclick="buttonvaluerood(1)">rood</button>
+      </div>
+      <p>audiofile input</p>
+           <input type="file" name="audiofile" accept="audio/*">
+
+      <div id="groen"></div>
+ <!-- bij het drukken op de button wordt de value "1" meegegeven naar de javascript code -->
+	<button onclick="buttonvaluegroen(1)">groen</button>
+      </div>
+      <p>audiofile input</p>
+           <input type="file" name="audiofile" accept="audio/*">
+
+      <div id="blauw"></div>
+      <!-- bij het drukken op de button wordt de value "1" meegegeven naar de javascript code -->
+         <button id="blauweknop" onclick="buttonvalueblauw(1)">blauw</button>
+           </div>
+           <p>audiofile input</p>
+           <input type="file" name="audiofile" accept="audio/*">
+    
+</box>
+</body>
+</html>
