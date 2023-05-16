@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+<h1>Login Page</h1>
+<form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+    <input type="button" value="Login" onclick="login()">
+</form>
+<script>
+    function login() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if (username == "admin" && password == "password") {
+            alert("Login successful!");
+            location.replace("{{ url_for( 'dashboard' )}}");
+        } else {
+            alert("Invalid username or password. Please try again.");
+        }
+    }
+</script>
+<a href="{{ url_for( 'dashboard' )}}">link text</a>
+</body>
+</html>
